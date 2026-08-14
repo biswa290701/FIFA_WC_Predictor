@@ -1,0 +1,75 @@
+# ============================================================
+# FIFA World Cup Predictor - Git Ignore
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---------- Virtual Environments ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- Jupyter Notebook ----------
+.ipynb_checkpoints/
+
+# ---------- Python/Jupyter temporary files ----------
+*.tmp
+*.temp
+
+# ---------- Machine Learning / Generated Models ----------
+models/*.pkl
+models/*.joblib
+models/*.pickle
+models/*.h5
+models/*.keras
+models/*.pt
+models/*.pth
+
+# ---------- Generated Results ----------
+results/
+outputs/
+logs/
+
+# Keep folder structure if needed
+!results/.gitkeep
+!outputs/.gitkeep
+
+# ---------- Local Data ----------
+# Ignore large/generated datasets if necessary
+# Uncomment these if your dataset becomes too large for Git:
+# data/processed/
+# data/raw/*.csv
+
+# ---------- Environment / Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- OS Files ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- IDE / Editors ----------
+.vscode/
+.idea/
+
+# ---------- Python Packaging ----------
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ---------- Testing / Coverage ----------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------- Misc ----------
+*.log
+*.bak
+*.swp
